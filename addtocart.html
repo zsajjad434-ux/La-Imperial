@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+      <script src="./script.js"></script>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./jquery.js"></script>
+
+
+    
+</head>
+<body>
+    <div class="headline">
+    <p>Free Shipping All Over Pakistan Within 24hrs Delivery in Karachi</span></p>
+  </div>
+ <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container-fluid">
+
+  
+    <a class="navbar-brand" href="#">
+      <img src="./imgs/logo.png" alt="logo" width="120">
+    </a>
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNavDropdown">
+
+    
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+          <ul class="dropdown-menu justify-content-center text-center" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="./pel.html">Pel</a></li>
+            <li><a class="dropdown-item" href="./dawlance.html">Dawlance</a></li>
+            <li><a class="dropdown-item" href="./superasia.html">Super Asia</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+    
+      <form class="d-flex me-3 justify-content-center" role="search">
+        <input class="form-control" type="search" placeholder="Search products..." aria-label="Search" id="searchInput">
+       <input type="button" value="Search" class="searchbtn">
+      </form>
+
+      <div class="d-flex align-items-center justify-content-center mt-3">
+        <a href="./loginform.html" class="me-3 fs-5 text-dark"><i class="bi bi-person"></i></a>
+        <a href="./pel.html" class="fs-5 text-dark"><i class="bi bi-cart"></i></a>
+      </div>
+    </div>
+  </div>
+
+  </nav>
+
+<div class="cart-container">
+<div class="cart-box">
+<div class="cart-head">
+    <h1>SHOPPING CART</h1>
+</div>
+ <div class="cart">
+    <h1>Your order has been placed successfully.</h1>
+<p id="put"></p>
+<div class="starrating" >
+  <h3 class="starheading">Rate Our Service :</h3>
+        <i class="fa-solid fa-star" id="str1"></i>
+        <i class="fa-solid fa-star" id="str2"></i>
+        <i class="fa-solid fa-star" id="str3"></i>
+        <i class="fa-solid fa-star" id="str4"></i>
+        <i class="fa-solid fa-star" id="str5"></i>
+      </div>
+</div> 
+</div>
+</div>
+
+
+
+<script>
+      let total = localStorage.getItem("textvalue");
+  document.getElementById("put").innerHTML = "Your Total Price is Rs. " + total;
+  
+</script> 
+
+
+<script>
+        $(document).ready(function(){
+         $("#str1").click(function(){
+            $(".fa-star").css("color","#00274D");
+            $("#str1").css("color","yellow");
+         });  
+        });
+          $(document).ready(function(){
+         $("#str2").click(function(){
+            $(".fa-star").css("color","#00274D");
+            $("#str1 , #str2").css("color","yellow");
+         });  
+        });
+         $(document).ready(function(){
+         $("#str3").click(function(){
+            $(".fa-star").css("color","#00274D");
+            $("#str1 , #str2 , #str3").css("color","yellow");
+         });  
+        });
+         $(document).ready(function(){
+         $("#str4").click(function(){
+            $(".fa-star").css("color","#00274D");
+            $("#str1 , #str2 , #str3 , #str4").css("color","yellow");
+         });  
+        });
+         $(document).ready(function(){
+         $("#str5").click(function(){
+            $(".fa-star").css("color","#00274D");
+            $("#str1 , #str2 , #str3 , #str4 , #str5").css("color","yellow");
+         });  
+        });
+    </script>
+
+
+
+
+  <!-- Footer  -->
+  <div class="footer">
+
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span style="color: white;">Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="bi bi-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="bi bi-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="foot-container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4 ">
+                La Imperial
+              </h6>
+              <p>
+                At La Imperial, we are dedicated to bringing you the finest in home appliances that combine quality,
+                innovation, and reliability. Whether you're upgrading your kitchen, enhancing your living space, or
+                making your daily routines easier, we offer a wide range of products that meet your needs and exceed
+                expectations.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Home Appliances
+              </h6>
+              <p style="text-align: center;">
+                <a href="#!" class="text-reset">Washing machine</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Refrigerator</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Fans</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Water Dispenser</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Deep Freezer</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Microwave Oven</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Home</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Categories</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">About</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Contact</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="bi bi-home me-3"></i>Madina City Mall Saddar, PK</p>
+              <p>
+                <i class="bi bi-envelope me-3"></i>
+                laimperal23@gmail.com
+              </p>
+              <p><i class="bi bi-phone me-3"></i> + 01 567 432 22</p>
+              <p><i class="bi bi-phone me-3"></i> + 01 345 123 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05); color: white; border-top: 2px solid white;">
+        Copyright © 2025 La Imperal Home Appliances All Rights Reserved. Designed & Developed By Mean3 Pvt Ltd.
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </div>
+    <!-- Footer -->
+
+
+<body>
+
+
+</html>
+

@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <script src="./script.js"></script>
+</head>
+<body>
+
+ <div class="headline">
+    <p>Free Shipping All Over Pakistan Within 24hrs Delivery in Karachi</span></p>
+  </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container-fluid">
+
+  
+    <a class="navbar-brand" href="#">
+      <img src="./imgs/logo.png" alt="logo" width="120">
+    </a>
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNavDropdown">
+
+    
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+          <ul class="dropdown-menu justify-content-center text-center" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="pel.html">Pel</a></li>
+            <li><a class="dropdown-item" href="dawlance.html">Dawlance</a></li>
+            <li><a class="dropdown-item" href="superasia.html">Super Asia</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+    
+      <form class="d-flex me-3 justify-content-center" role="search">
+        <input class="form-control" type="search" placeholder="Search products..." aria-label="Search" id="searchInput">
+       <input type="button" value="Search" class="searchbtn">
+      </form>
+
+      <div class="d-flex align-items-center justify-content-center mt-3">
+        <a href="./loginform.html" class="me-3 fs-5 text-dark"><i class="bi bi-person"></i></a>
+        <a href="./pel.html" class="fs-5 text-dark"><i class="bi bi-cart"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>
+    
+
+     
+    <div>
+        <img src="./superasia/banner.webp" alt="" width="100%" height="100%">
+    </div>
+
+     <script>
+
+
+ document.getElementById("searchInput").addEventListener("keyup", function () {
+    let searchText = this.value.toLowerCase().trim();
+
+
+    let cards = document.querySelectorAll(".pelcard1");
+
+    cards.forEach(card => {
+
+      let productName = card.querySelector(".Pelcard").textContent.toLowerCase();
+
+      if (productName.includes(searchText) || searchText === "") {
+        card.style.display = "inline-block";  
+      } else {
+        card.style.display = "none";  
+      }
+    });
+  });
+
+  </script>
+
+   <div class="main-heading14">
+  <h1 class="pelref">Washing Machine</h1>
+  </div>
+  
+  <div class="pelproduct">
+  <div class="container-2">
+    <div class="pelcard1">
+      <img src="./superasia/washingmachine/1-removebg-preview (3).png" alt="SA-814i AUTO INVERTER" class="img-default"> 
+       <img src="./superasia/washingmachine/1copy.png" alt="SA-814i AUTO INVERTER" class="img-hover"> 
+      <div class="Pelcard">SA-814i AUTO INVERTER Washing Machine</div>
+      <p  class="pelprice">Price Rs. <span id="wow61">107500.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty61" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart60()" class="cartBtn">Add To Cart</button>
+         <div class="btn-container">
+    <a href="docs/superasia/superproduct1.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct1.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+       <img src="./superasia/washingmachine/2-removebg-preview.png" alt="SA-814i AUTO INVERTER" class="img-default"> 
+       <img src="./superasia/washingmachine/2copy.png" alt="SA-814i AUTO INVERTER" class="img-hover"> 
+      <div class="Pelcard">SA-814 AUTO Washing Machine</div>
+       <p  class="pelprice">Price Rs. <span id="wow62">98500.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty62" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart61()" class="cartBtn">Add To Cart</button>
+         <div class="btn-container">
+    <a href="docs/superasia/superproduct2.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct2.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+      <img src="./superasia/washingmachine/3-removebg-preview.png" alt="SA-814i AUTO INVERTER" class="img-default"> 
+       <img src="./superasia/washingmachine/3copy.png" alt="SA-814i AUTO INVERTER" class="img-hover"> 
+      <div class="Pelcard">SA-809P AUTO Washing Machine</div>
+        <p  class="pelprice">Price Rs. <span id="wow63">61500.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty63" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart62()" class="cartBtn">Add To Cart</button>
+         <div class="btn-container">
+    <a href="docs/superasia/superproduct3.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct3.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+      <img src="./superasia/washingmachine/4-removebg-preview.png" alt="SA-814i AUTO INVERTER" class="img-default"> 
+       <img src="./superasia/washingmachine/4copy.png" alt="SA-814i AUTO INVERTER" class="img-hover"> 
+      <div class="Pelcard">SA-290 BIG WASH Washing Machine</div>
+        <p  class="pelprice">Price Rs. <span id="wow64">28600.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty64" min="1" max="10"> <br>
+        </label>
+        </form>
+        <button  onclick="Cart63()" class="cartBtn">Add To Cart</button>
+        <div class="btn-container">
+    <a href="docs/superasia/superproduct4.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct4.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+      <img src="./superasia/washingmachine/5-removebg-preview.png" alt="SA-814i AUTO INVERTER" class="img-default"> 
+       <img src="./superasia/washingmachine/5copy.png" alt="SA-814i AUTO INVERTER" class="img-hover"> 
+      <div class="Pelcard">SA-244 SUPER STYLE Washing Machine</div>
+       <p  class="pelprice">Price Rs. <span id="wow65">34800.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty65" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart64()" class="cartBtn">Add To Cart</button>
+         <div class="btn-container">
+    <a href="docs/superasia/superproduct5.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct5.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+       <img src="./superasia/washingmachine/6-removebg-preview.png" alt="SA-814i AUTO INVERTER" class="img-default"> 
+       <img src="./superasia/washingmachine/6copy.png" alt="SA-814i AUTO INVERTER" class="img-hover"> 
+      <div class="Pelcard">SA-240 SHOWER WASH CRYSTAL Washing Machine</div>
+       <p  class="pelprice">Price Rs. <span id="wow66">26800.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty66" min="1" max="10"> <br>
+        </label>
+        </form>
+        <button  onclick="Cart65()" class="cartBtn">Add To Cart</button>
+        <div class="btn-container">
+    <a href="docs/superasia/superproduct6.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct6.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+  </div>
+  </div>
+
+
+
+ <div class="main-heading15">
+  <h1 class="pelref">Air Cooler</h1>
+  </div>
+  <div class="pelproduct">
+  <div class="container-2">
+    <div class="pelcard1">
+      <img src="./superasia/aircooler/1-removebg-preview (4).png" alt="ECM 6500 PLUS FAST COOL" class="img-default"> 
+       <img src="./superasia/aircooler/1copy.png" alt="ECM 6500 PLUS FAST COOL" class="img-hover"> 
+      <div class="Pelcard">ECM 6500 PLUS FAST COOL Air Cooler</div>
+      <p  class="pelprice">Price Rs. <span id="wow67">31600.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty67" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart66()" class="cartBtn">Add To Cart</button>
+         <div class="btn-container">
+    <a href="docs/superasia/superproduct7.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct7.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+      <img src="./superasia/aircooler/2-removebg-preview (1).png" alt="ECM-4600 PLUS DC EASY COOL" class="img-default">
+       <img src="./superasia/aircooler/2copy.png" alt="ECM 6500 PLUS FAST COOL" class="img-hover"> 
+      <div class="Pelcard">ECM-4600 PLUS DC EASY COOL Air Cooler</div>
+       <p  class="pelprice">Price Rs. <span id="wow68">21800.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty68" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart67()" class="cartBtn">Add To Cart</button>
+         <div class="btn-container">
+    <a href="docs/superasia/superproduct8.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct8.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+      <img src="./superasia/aircooler/3-removebg-preview (1).png" alt="ECM-3500 PLUS DC SMART COOL" class="img-default">
+       <img src="./superasia/aircooler/3copy.png" alt="ECM 6500 PLUS FAST COOL" class="img-hover"> 
+      <div class="Pelcard">ECM-3500 PLUS DC SMART COOL Air Cooler</div>
+          <p  class="pelprice">Price Rs. <span id="wow69">18000.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty69" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart68()" class="cartBtn">Add To Cart</button>
+         <div class="btn-container">
+    <a href="docs/superasia/superproduct9.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct9.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+      <img src="./superasia/aircooler/4-removebg-preview (1).png" alt="ECM-9000 PLUS INVERTER THUNDER COOL" class="img-default">
+       <img src="./superasia/aircooler/4copy.png" alt="ECM 6500 PLUS FAST COOL" class="img-hover"> 
+      <div class="Pelcard">ECM-9000 PLUS INVERTER THUNDER COOL Air Cooler</div>
+       <p  class="pelprice">Price Rs. <span id="wow70">41500.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty70" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart69()" class="cartBtn">Add To Cart</button>
+         <div class="btn-container">
+    <a href="docs/superasia/superproduct10.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct10.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+      <img src="./superasia/aircooler/5-removebg-preview (1).png" alt="ECM-4700 PLUS INVERTER COOL MASTER" class="img-default">
+       <img src="./superasia/aircooler/5copy.png" alt="ECM 6500 PLUS FAST COOL" class="img-hover"> 
+      <div class="Pelcard">ECM-4700 PLUS INVERTER COOL MASTER Air Cooler</div>
+       <p  class="pelprice">Price Rs. <span id="wow71">35200.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty71" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart70()" class="cartBtn">Add To Cart</button>
+         <div class="btn-container">
+    <a href="docs/superasia/superproduct11.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct11.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+      <img src="./superasia/aircooler/6-removebg-preview (1).png" alt="ECM 4900 PLUS QUICK COOL" class="img-default">
+       <img src="./superasia/aircooler/6copy.png" alt="ECM 6500 PLUS FAST COOL" class="img-hover"> 
+      <div class="Pelcard">ECM 4900 PLUS QUICK COOL Air Cooler</div>
+       <p  class="pelprice">Price Rs. <span id="wow72">27500.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty72" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart71()" class="cartBtn">Add To Cart</button>
+         <div class="btn-container">
+    <a href="docs/superasia/superproduct12.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct12.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+  </div>
+  </div>
+
+
+ <div class="main-heading16">
+  <h1 class="pelref">Water Heater</h1>
+  </div>
+  <div class="pelproduct">
+  <div class="container-2">
+    <div class="pelcard1">
+      <img src="./superasia/waterheater/1-removebg-preview (5).png" alt="SEH-16 (Star Series)" class="img-default"> 
+      <img src="./superasia/waterheater/1copy.png" alt="SEH-16 (Star Series)" class="img-hover"> 
+      <div class="Pelcard">SEH-16 (Star Series) Air Cooler</div>
+       <p  class="pelprice">Price Rs. <span id="wow73">20000.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty73" min="1" max="10"> <br>
+        </label>
+        </form>
+        <button  onclick="Cart72()" class="cartBtn">Add To Cart</button>
+        <div class="btn-container">
+    <a href="docs/superasia/superproduct13.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct13.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+      <img src="./superasia/waterheater/2-removebg-preview (2).png" alt="GH-506 ECO SERIES (NG/LPG)" class="img-default">
+      <img src="./superasia/waterheater/2-removebg-preview (2).png" alt="SEH-16 (Star Series)" class="img-hover"> 
+      <div class="Pelcard">GH-506 ECO SERIES (NG/LPG) Air Cooler</div>
+       <p  class="pelprice">Price Rs. <span id="wow74">16900.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty74" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart73()" class="cartBtn">Add To Cart</button>
+         <div class="btn-container">
+    <a href="docs/superasia/superproduct14.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct14.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+      <img src="./superasia/waterheater/3-removebg-preview (2).png" alt="SEH-11 STAR SERIES"  class="img-default">
+      <img src="./superasia/waterheater/3-removebg-preview (2).png" alt="SEH-16 (Star Series)" class="img-hover"> 
+      <div class="Pelcard">SEH-11 STAR SERIES Air Cooler</div>
+        <p  class="pelprice">Price Rs. <span id="wow75">17500.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty75" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart74()" class="cartBtn">Add To Cart</button>
+         <div class="btn-container">
+    <a href="docs/superasia/superproduct15.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct15.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+      <img src="./superasia/waterheater/4-removebg-preview (2).png" alt="MEH-50 (Mega Series)" class="img-default">
+      <img src="./superasia/waterheater/4-removebg-preview (2).png" alt="SEH-16 (Star Series)" class="img-hover"> 
+      <div class="Pelcard">MEH-50 (Mega Series) Air Cooler</div>
+       <p  class="pelprice">Price Rs. <span id="wow76">43500.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty76" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart75()" class="cartBtn">Add To Cart</button>
+         <div class="btn-container">
+    <a href="docs/superasia/superproduct16.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct16.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+      <img src="./superasia/waterheater/5-removebg-preview (2).png" alt="GH-206DI QUICK SERIES (NG/LPG)" class="img-default">
+      <img src="./superasia/waterheater/5-removebg-preview (2).png" alt="SEH-16 (Star Series)" class="img-hover"> 
+      <div class="Pelcard">GH-206DI QUICK SERIES (NG/LPG) Air Cooler</div>
+         <p  class="pelprice">Price Rs. <span id="wow77">18000.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty77" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart76()" class="cartBtn">Add To Cart</button>
+         <div class="btn-container">
+    <a href="docs/superasia/superproduct17.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct17.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+      <img src="./superasia/waterheater/6-removebg-preview (2).png" alt="EH-660" class="img-default">
+      <img src="./superasia/waterheater/6-removebg-preview (2).png" alt="SEH-16 (Star Series)" class="img-hover"> 
+      <div class="Pelcard">EH-660 Air Cooler</div>
+       <p  class="pelprice">Price Rs. <span id="wow78">24900.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty78" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart77()" class="cartBtn">Add To Cart</button>
+         <div class="btn-container">
+    <a href="docs/superasia/superproduct18.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct18.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+  </div>
+  </div>
+
+
+ <div class="main-heading17">
+  <h1 class="pelref">Water Dispenser</h1>
+  </div>
+
+  <div class="pelproduct">
+  <div class="container-2">
+    <div class="pelcard1">
+      <img src="./superasia/waterdispensers/1-removebg-preview.png" alt="HC-53G" class="img-default">
+      <img src="./superasia/waterdipensers/1copy.png" alt="HC-53G" class="img-hover"> 
+      <div class="Pelcard">HC-53G Water Dispenser</div>
+       <p  class="pelprice">Price Rs. <span id="wow79">34800.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty79" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart78()" class="cartBtn">Add To Cart</button>
+          <div class="btn-container">
+    <a href="docs/superasia/superproduct19.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct19.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+       <img src="./superasia/waterdispensers/2-removebg-preview.png" alt="HC-53G" class="img-default">
+      <img src="./superasia/waterdispensers/2COPY.png" alt="HC-53G" class="img-hover"> 
+      <div class="Pelcard">HC-55W Water Dispenser</div>
+       <p  class="pelprice">Price Rs. <span id="wow80">34800.00 </span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty80" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart79()" class="cartBtn">Add To Cart</button>
+          <div class="btn-container">
+    <a href="docs/superasia/superproduct20.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct20.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+       <img src="./superasia/waterdispensers/3-removebg-preview.png" alt="HC-53G" class="img-default">
+      <img src="./superasia/waterdispensers/3COPY.png" alt="HC-53G" class="img-hover"> 
+      <div class="Pelcard">HC-51B Water Dispenser</div>
+        <p  class="pelprice">Price Rs. <span id="wow81">33800.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty81" min="1" max="10"> <br>
+        </label>
+        </form>
+        <button  onclick="Cart80()" class="cartBtn">Add To Cart</button>
+         <div class="btn-container">
+    <a href="docs/superasia/superproduct21.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct21.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+       <img src="./superasia/waterdispensers/4-removebg-preview.png" alt="HC-53G" class="img-default">
+      <img src="./superasia/waterdispensers/4copy.png" alt="HC-53G" class="img-hover"> 
+      <div class="Pelcard">HC-52R Water Dispenser</div>
+         <p  class="pelprice">Price Rs. <span id="wow82">33800.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty82" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart81()" class="cartBtn">Add To Cart</button>
+          <div class="btn-container">
+    <a href="docs/superasia/superproduct22.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct22.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+    <div class="pelcard1">
+      <img src="./superasia/waterdispensers/5-removebg-preview.png" alt="HC-53G" class="img-default">
+      <img src="./superasia/waterdispensers/5copy.png" alt="HC-53G" class="img-hover"> 
+      <div class="Pelcard">HC-56B Water Dispenser</div>
+       <p  class="pelprice">Price Rs. <span id="wow83">34800.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty83" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart82()" class="cartBtn">Add To Cart</button>
+          <div class="btn-container">
+    <a href="docs/superasia/superproduct23.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct23.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+       <img src="./superasia/waterdispensers/6-removebg-preview.png" alt="HC-53G" class="img-default">
+      <img src="./superasia/waterdispensers/6copy.png" alt="HC-53G" class="img-hover"> 
+      <div class="Pelcard">HC-57M Water Dispenser</div>
+       <p  class="pelprice">Price Rs. <span id="wow84">34800.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty84" min="1" max="10"> <br>
+        </label>
+        </form>
+            <button  onclick="Cart83()" class="cartBtn">Add To Cart</button>
+             <div class="btn-container">
+    <a href="docs/superasia/superproduct24.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct24.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+  </div>
+  </div>
+
+
+
+ <div class="main-heading18">
+  <h1 class="pelref">Fan</h1>
+  </div>
+
+  <div class="pelproduct">
+  <div class="container-2">
+    <div class="pelcard1">
+      <img src="./superasia/Fans/1-removebg-preview (5).png" alt="SMART ANTIQUE AC/DC INVERTER FAN" class="img-default"> 
+      <img src="./superasia/Fans/1copy.png" alt="SMART ANTIQUE AC/DC INVERTER FAN" class="img-hover"> 
+      <div class="Pelcard">SMART ANTIQUE AC/DC INVERTER FAN</div>
+      <p  class="pelprice">Price Rs. <span id="wow85">10295.00 </span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty85" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart84()" class="cartBtn">Add To Cart</button>
+          <div class="btn-container">
+    <a href="docs/superasia/superproduct25.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct25.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+    
+    <div class="pelcard1">
+      <img src="./superasia/Fans/2-removebg-preview (2).png" alt="TRIPOD FAN" class="img-default">
+      <img src="./superasia/Fans/2-removebg-preview (2).png" alt="TRIPOD FAN" class="img-hover">
+      <div class="Pelcard">TRIPOD FAN</div>
+        <p  class="pelprice">Price Rs. <span id="wow86">15345.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty86" min="1" max="10"> <br>
+        </label>
+        </form>
+        <button  onclick="Cart85()" class="cartBtn">Add To Cart</button>
+         <div class="btn-container">
+    <a href="docs/superasia/superproduct26.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct26.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+      <img src="./superasia/Fans/3-removebg-preview (2).png" alt="SUPER STANDARD PEDESTAL FAN" class="img-default">
+       <img src="./superasia/Fans/3-removebg-preview (2).png" alt="SUPER STANDARD PEDESTAL FAN" class="img-hover">
+      <div class="Pelcard">SUPER STANDARD PEDESTAL FAN</div>
+       <p  class="pelprice">Price Rs. <span id="wow87">13795.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty87" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart86()" class="cartBtn">Add To Cart</button>
+          <div class="btn-container">
+    <a href="docs/superasia/superproduct27.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct27.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+      <img src="./superasia/Fans/4-removebg-preview (2).png" alt="EXHAUST FAN METAL WITH NET" class="img-default">
+      <img src="./superasia/Fans/4-removebg-preview (2).png" alt="EXHAUST FAN METAL WITH NET" class="img-hover">
+      <div class="Pelcard">EXHAUST FAN METAL WITH NET</div>
+        <p  class="pelprice">Price Rs. <span id="wow88">5445.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty88" min="1" max="10"> <br>
+        </label>
+        </form>
+         <button  onclick="Cart87()" class="cartBtn">Add To Cart</button>
+          <div class="btn-container">
+    <a href="docs/superasia/superproduct28.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct28.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+      <img src="./superasia/Fans/5-removebg-preview (2).png" alt="MIST PEDESTAL FAN" class="img-default">
+      <img src="./superasia/Fans/5copy.png" alt="MIST PEDESTAL FAN" class="img-hover">
+      <div class="Pelcard">MIST PEDESTAL FAN</div>
+        <p  class="pelprice">Price Rs. <span id="wow89">22745.00 </span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty89" min="1" max="10"> <br>
+        </label>
+        </form>
+            <button  onclick="Cart88()" class="cartBtn">Add To Cart</button>
+             <div class="btn-container">
+    <a href="docs/superasia/superproduct29.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct29.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+
+
+    <div class="pelcard1">
+      <img src="./superasia/Fans/6-removebg-preview (2).png" alt="SAVER WATER PROOF FAN (Steel Canopy)"  class="img-default">
+      <img src="./superasia/Fans/6-removebg-preview (2).png" alt="SAVER WATER PROOF FAN (Steel Canopy)"  class="img-hover">
+      <div class="Pelcard">SAVER WATER PROOF FAN (Steel Canopy)</div>
+       <p  class="pelprice">Price Rs. <span id="wow90">9445.00</span></p>
+        <div class="addtoCart">
+        <form action="" class="addtocart">
+        <label for="">
+            Quantity:
+            <input type="number" value="1" id="qty90" min="1" max="10"> <br>
+        </label>
+        </form>
+        <button  onclick="Cart89()" class="cartBtn">Add To Cart</button>
+         <div class="btn-container">
+    <a href="docs/superasia/superproduct30.pdf" class="pdfbtn download-btn" download>Download</a>
+    <a href="docs/superasia/superproduct30.pdf" target="_blank" class="pdfbtn view-btn">View</a>
+  </div>
+        </div>
+    </div>
+  </div>
+  </div>
+
+
+
+   <!-- Footer  -->
+  <div class="footer">
+
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span style="color: white;">Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="bi bi-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="bi bi-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="foot-container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4 ">
+                La Imperial
+              </h6>
+              <p>
+                At La Imperial, we are dedicated to bringing you the finest in home appliances that combine quality,
+                innovation, and reliability. Whether you're upgrading your kitchen, enhancing your living space, or
+                making your daily routines easier, we offer a wide range of products that meet your needs and exceed
+                expectations.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Home Appliances
+              </h6>
+              <p style="text-align: center;">
+                <a href="#!" class="text-reset">Washing machine</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Refrigerator</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Fans</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Water Dispenser</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Deep Freezer</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Microwave Oven</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Home</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Categories</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">About</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Contact</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="bi bi-home me-3"></i>Madina City Mall Saddar, PK</p>
+              <p>
+                <i class="bi bi-envelope me-3"></i>
+                laimperal23@gmail.com
+              </p>
+              <p><i class="bi bi-phone me-3"></i> + 01 567 432 22</p>
+              <p><i class="bi bi-phone me-3"></i> + 01 345 123 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05); color: white; border-top: 2px solid white;">
+        Copyright © 2025 La Imperal Home Appliances All Rights Reserved. Designed & Developed By Mean3 Pvt Ltd.
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </div>
+    <!-- Footer -->
+
+
+
+
+</body>
+</html>
